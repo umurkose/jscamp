@@ -10,7 +10,6 @@ function getMovies(searchText){
 	  dataType: 'json',
 	  url: 'https://www.omdbapi.com/?s=' + searchText + '&apikey=d9ce5696',
 	  success: function(data) {
-	  	console.log(data)
 	  	let movies = data.Search;
 	  	let output = '';
 	  	$.each(movies, (index, movie) => {
